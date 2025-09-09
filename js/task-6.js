@@ -20,8 +20,11 @@ const input = document.querySelector('input');
 
 createBtn.addEventListener('click', () => {
   const amount = input.value;
-  boxesContainer.innerHTML = '';
+  if(amount < 1 || amount > 100) {
+    return;
+  }
 
+  boxesContainer.innerHTML = '';
     for(let i = 0; i < amount; i += 1) {
         const box = document.createElement('div');
         const size = 30 + i * 10;
