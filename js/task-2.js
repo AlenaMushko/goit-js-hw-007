@@ -48,5 +48,4 @@ const onImagesList = images
     )
     .join("");
 
-console.log(onImagesList);
 galleryEl.insertAdjacentHTML("beforeend", onImagesList);

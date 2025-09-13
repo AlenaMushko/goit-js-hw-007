@@ -16,7 +16,7 @@ body {
 .item {
   background: #F6F6FE;
   width: 392px;
-    padding: 16px;
+  padding: 16px;
 }
 
 .item ul {
@@ -32,4 +32,85 @@ body {
   padding: 8px 16px;
   border: 1px solid #E8E8F3;
   border-radius: 8px;
+}
+
+/*task3*/
+#name-input,
+.login-form input,
+#controls input {
+  display: block;
+  width: 360px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+/*task4*/
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label {
+  color: #2E2F42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 8px;
+}
+
+.login-form button,
+.widget button,
+#controls button {
+  background: #4E75FF;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.login-form button {
+  width: 86px;
+}
+
+/*task5*/
+.widget {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/*task 6*/
+#controls,
+#boxes {
+  background: #F6F6FE;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#controls button {
+  width: 120px;
+}
+
+#controls button:nth-child(3) {
+  background: #FF4E4E;
+}
+
+#boxes {
+  gap: 44px;
 }
